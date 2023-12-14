@@ -1,0 +1,64 @@
+.header {
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+
+  .button {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    background-color: #3c037e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger {
+    width: 100%;
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 40%;
+      margin: auto;
+      background-color: white;
+      position: relative;
+      transition: transform 0.3s;
+      z-index: 10;
+    }
+
+    &::after {
+      top: -5px;
+    }
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .burgerActive {
+    &::after {
+      transform: rotate(45deg);
+      top: -1px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: 0px;
+    }
+  }
+}
+.logoContainer {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  font-weight: lighter;
+}

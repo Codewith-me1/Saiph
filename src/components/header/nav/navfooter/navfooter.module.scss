@@ -1,0 +1,21 @@
+
+
+.navfooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navfooter {
+        
+        align-items: center; /* Center items in the column */
+        text-align: center; /* Center text in each item */
+        gap: 20px; /* Reduce the gap for smaller screens */
+    }
+}
+
+
+

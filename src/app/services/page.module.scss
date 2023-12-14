@@ -1,0 +1,32 @@
+
+
+.title{
+          padding: 100px;
+          font-size: 30px;
+
+}
+
+
+
+      .text{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+  
+  
+
+.service{
+    position: relative;
+    margin-top: 10vh;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .service {
+        margin-top: 30vh; 
+    }
+}
